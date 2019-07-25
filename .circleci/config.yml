@@ -1,0 +1,30 @@
+version: 2
+jobs:
+  test:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: install npm dependences
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: run lint
+          command: npm run lint
+      - run:
+          name: run test
+          command: npm test
+
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test
