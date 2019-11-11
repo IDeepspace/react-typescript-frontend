@@ -19,7 +19,9 @@ ShallowWrapper {
     "nodeType": "function",
     "props": Object {
       "children": <div>
-        Home Content
+        <Hello
+          name="TypeScript"
+        />
       </div>,
     },
     "ref": null,
@@ -28,11 +30,23 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "Home Content",
+        "children": <Hello
+          name="TypeScript"
+        />,
         "className": undefined,
       },
       "ref": null,
-      "rendered": "Home Content",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "name": "TypeScript",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       "type": "div",
     },
     "type": Symbol(react.fragment),
@@ -44,7 +58,9 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": <div>
-          Home Content
+          <Hello
+            name="TypeScript"
+          />
         </div>,
       },
       "ref": null,
@@ -53,11 +69,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Home Content",
+          "children": <Hello
+            name="TypeScript"
+          />,
           "className": undefined,
         },
         "ref": null,
-        "rendered": "Home Content",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "name": "TypeScript",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         "type": "div",
       },
       "type": Symbol(react.fragment),
